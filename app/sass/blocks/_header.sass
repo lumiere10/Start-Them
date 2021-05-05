@@ -1,0 +1,165 @@
+@font-face
+    font-family: "font-bold"
+    src : url("././fonts/DINCondensed-Regular.ttf")
+@font-face
+    font-family: "font-light"
+    src : url("././fonts/DINCondensed-Light.ttf")
+
+$bg_black: #161615
+$bg-blue: #00C8EB
+$bg-white: #fff
+
+.img-txt
+    flex-wrap: nowrap !important
+    align-items: center
+a
+    text-decoration: none !important
+
+
+body
+    header
+        .header-wrapper
+            max-width: none
+            padding: 0
+            .top-header
+                background: $bg_black
+                .main-navigation ul
+                    margin-bottom: 0
+                    height: 40px
+                    display: flex
+                    align-items: center
+                
+                    li a
+                        color: #848484
+                        text-decoration: none
+                        font-family: 'Arial' 
+                        font-size: 14px                     
+            .between-menu
+                margin: 0 auto
+                flex-wrap: nowrap
+                min-height: 90px
+                align-items: center
+                justify-content: space-between
+                .site-branding
+                    padding: 0
+                .phones
+                    flex-wrap: nowrap
+                    .img-txt
+                        align-items: center 
+                        a
+                            width: auto
+                            font-family: 'font-bold'
+                            color: $bg_black
+                            font-size: 18px
+                .header-btn
+                    justify-content: space-between
+                    align-items: center
+                    font-size: 14px
+                    font-family: 'Arial'
+                    .img-txt
+                        &:first-child
+                            button
+                                background: transparent
+                                padding: 0
+                                border: none
+                        &:last-child
+                            border: 1px solid #E6E7EA
+                            height: 44px
+                            justify-content: center
+                            button
+                                background: transparent
+                                padding: 0
+                                border: none
+                    .btn-action
+                        background: $bg-blue
+                        color: $bg-white 
+                        border: none    
+                        height: 44px
+            .main-menu  
+                height: 53px
+                margin: 15px auto 25px auto
+                #primary-menu
+                    li
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        height: 36px
+                        a
+                            font-family: 'font-bold'
+                            color: $bg_black
+                            font-size: 18px
+                            text-transform: uppercase
+                            position: relative
+                            
+                            &:hover
+                                    &::after
+                                        content: ""
+                                        position: absolute
+                                        display: block
+                                        height: 4px
+                                        width: 100%
+                                        background: $bg-blue   
+                                        bottom: -10px
+                        &:last-child
+                            width: 88px
+                            height: 36px
+                            display: flex
+                            background: $bg_black
+                            -webkit-clip-path: polygon(100% 0px, 100% 50%, 100% 100%, 0px 100%, 15% 45%, 0px 0px)
+                            clip-path: polygon(100% 0px, 100% 50%, 100% 100%, 0px 100%, 15% 45%, 0px 0px)
+                                
+                            a
+                                color: $bg-white
+                                background: $bg_black
+                                
+    #primary.site-main
+        .entry-content
+            .block-with-slider
+                height: 370px
+                position: relative
+                justify-content: space-between
+                align-items: center
+                .slider
+                    width: 60%
+                .bg-txt
+                    // background-image: url('././app/img/bg1.png')
+                    background-image: url('././images/bg1.png')
+                    background-repeat: no-repeat
+                    background-size: cover
+                    padding: 0
+                    height: inherit
+                    width: 370px
+                    position: relative
+                    &::before
+                        content: ""
+                        position: absolute
+                        display: block
+                        height: 100%
+                        width: 100%
+                        background: rgba(0, 0, 0, 0.25)
+                        z-index: 0
+                    h2
+                        text-align: center
+                        margin: auto
+                        color: $bg-white
+                        z-index: 5
+                        position: relative
+                        font-family: 'font-bold'
+                        font-size: 24px
+            .block-with-calc
+                height: 280px
+                font-family: 'font-bold'
+                font-size: 18px
+                .links
+                    a
+                        display: block
+                        color: #211E1E
+
+
+                        
+
+
+
+
+                    
+                   
